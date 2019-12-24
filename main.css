@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0; outline: 0;}
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    line-height: 25px;
+}
+.content{
+    background: #f0f0f0;
+    width: 800px;
+    margin: 0 auto;
+}
+.maincontent{
+    background: #fff;
+    margin: 10px;
+    min-height: 500px;
+    padding: 5px 10px;
+}
+.header, .footer {
+    text-align: center;
+    background: #ddd;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+}

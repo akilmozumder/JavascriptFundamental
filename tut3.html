@@ -1,0 +1,43 @@
+<!-- Variable -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Fundamental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="content">
+        <div class="header">
+            <h2><script>document.write("Javascript Fundamental");</script></h2>
+        </div>
+
+        <div class="maincontent">
+            <h3>Function with scope</h3>
+            <hr>
+            <script>
+              
+              var fruits = "Apple";
+
+              function myFruits(){
+                //   var fruits = "Banana"; //local variable
+                //   fruits = "orange"; //global variable
+                  window.fruits = "Pineapple"; //global variable
+                    document.write("Inside function: "+fruits);
+              }
+              myFruits();
+              document.write("<br>");
+              document.write("Outside function: "+fruits);
+
+            </script>
+        </div>
+
+        <div class="footer">
+            <h2><script>document.write("Imtiaz Bin Gias");</script></h2>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!-- Variable -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Fundamental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="content">
+        <div class="header">
+            <h2><script>document.write("Javascript Fundamental");</script></h2>
+        </div>
+
+        <div class="maincontent">
+            <h3>Array</h3>
+            <hr>
+            <div id="show"></div>
+            <strong>Array Concat</strong>
+            <script>
+                
+             var arr1 = [1,2,3,4,5,6];
+             var arr2 = [4,5,6,7,8,9];
+             var getarr = arr1.concat(arr2); 
+             document.write(getarr);
+             document.write("<hr>");
+            </script>
+            <strong>Array Sorting</strong>
+            <br>
+            <script>
+                 var color = ["Green", "Blue", "Yellow", "Red", "White"];
+             document.write("Before sorting: " + color + "</br>");
+             color.sort();
+             document.write("After Sorting: "+ color + "</br>");
+            </script>
+            <hr>
+            <strong>Number Sorting</strong>
+            <br>
+            <script>
+                 var num = [30,12,15,94,30,1010,350];
+             document.write("Before sorting: " + num + "</br>");
+             
+             function arrsort(x,y){
+                return (x-y);
+             }
+             num.sort(arrsort);
+             document.write("After Sorting: "+ num + "</br>");
+            </script>
+            <hr>
+            <strong>Array Length </strong><br>
+            <script>
+                document.write(num.length);
+            </script>
+            <hr>
+            <strong>push, pop, shift, unshift </strong><br>
+            <script>
+                document.write("My aray is: " + num + "</br>");
+                num.push(40);
+                document.write("Push 40 in array : " + num + "<br>"); 
+                num[num.length]=8000;
+
+                document.write("Push 8000 using num.length in array: " + num + "<br>");
+
+                num.pop();
+                document.write("Remove array last value using pop(): " + num + "</br>");
+
+                num.shift();
+                document.write("Remove first value of array using num.shift() : " + num + "</br>");
+                num.unshift(112);
+                document.write("Push 112 using unshift(112) in array first: " + num + "<br>");
+
+            </script>
+
+        </div>
+
+        <div class="footer">
+            <h2><script>document.write("Imtiaz Bin Gias");</script></h2>
+        </div>
+    </section>
+    
+</body>
+</html>
