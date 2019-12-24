@@ -17,9 +17,28 @@
             <h3>Object</h3>
             <p>Javascript is not object oriented programming but it support some objective of object oriented programming. Javascript is object based language.</p>
             <hr>
-            
+           
             <script>
-                
+                var person = {
+                    firstName: "Imtiaz",
+                    lastName: "Akil",
+                    Age: 26,
+                    func:function(){
+                        return this.firstName + " " + this.lastName;
+                    },
+                    firstNumber: 80,
+                    lastNumber: 90,
+                    cal:function(){
+                        return this.firstNumber + this.lastNumber;
+                    }
+                }
+                document.write(person.func() + "<br>"); 
+                document.write(person.Age + "</br>");
+
+                document.write(person.cal() + "</br>");
+                document.write(person.firstNumber + "</br>");
+
+
             </script>
         </div>
 
