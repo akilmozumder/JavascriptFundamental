@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Fundamental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="content">
+        <div class="header">
+            <h2><script>document.write("Javascript Fundamental");</script></h2>
+        </div>
+
+        <div class="maincontent">
+            <h3>Repetition Statement</h3>
+           
+            <hr>
+           
+            <p>
+                For Loop 
+            </p>
+            <script>
+                var i=0;
+                for(i=1; i<=10; i++ ){
+                    document.write(" 3 * " + i + "=" + i*3 + "<br>");
+                }
+            </script>
+            <hr>
+            <p>
+                While Loop
+            </p>
+            <script>
+                var i=1;
+                while(i<=10){
+                    if(i==11){break;}
+                    document.write( i + "<br>" );
+                    i++;
+                }
+            </script>
+            <hr>
+            <p>
+               do while
+            </p>
+            <script>
+           var i=1;
+           do{
+               document.write( "2 * " + i + "=" + i*2 + "<br>");
+               i++;
+           }
+           while(i<=10);
+            </script>
+            <hr>
+            <p>
+               For IN loop
+            </p>
+
+            <script>
+                var i = 0;
+                var color = ["Green", "Red", "Blue", "Orange", "Yellow"];
+                for(i in color){
+                    document.write(color[i] + "<br>");
+                }
+                var number = {a:1,b:2,c:3,d:4}
+                for(i in number){
+                    document.write(number[i] + "<br>");
+                }
+            </script>
+
+            <hr>
+            <script>
+                
+                
+
+
+            </script>
+        </div>
+
+        <div class="footer">
+            <h2><script>document.write("Imtiaz Bin Gias");</script></h2>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Fundamental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="content">
+        <header class="header">
+            <h2><script>document.write("Javascript Fundamental");</script></h2>
+        </header>
+
+        <section class="maincontent">
+            <div id="show">Imtiaz Bin Gias</div>
+            <hr>
+            <script>
+                var div1 = document.getElementById('show').innerText;
+                var div2 = document.querySelector("div").innerText;
+                var div3 = document.querySelectorAll("div")[0].innerText;
+                var div4 = document.getElementsByTagName("div")[0].innerText;
+    
+                document.write(div1 + "</br>" + div2 + "</br>" + div3 + "</br>" + div4);
+                
+            </script>
+        </section>
+
+        
+
+        <footer class="footer">
+            <h2><script>document.write("Imtiaz Bin Gias");</script></h2>
+        </footer>
+    </section>
+    
+</body>
+</html>

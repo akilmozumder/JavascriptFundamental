@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Fundamental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="content">
+        <div class="header">
+            <h2><script>document.write("Javascript Fundamental");</script></h2>
+        </div>
+
+        <div class="maincontent">
+            <h3>Switch Statement</h3>
+           
+            <hr>
+           
+            <p>
+                <input type="text" id="checkTxt" placeholder="enter php,java,c#">
+                <button onclick="checkCoding()">Check</button>
+                <div id="result"></div>
+            </p>
+            <script>
+               function checkCoding(){
+                   var txt;
+                   var checkTxt = document.getElementById("checkTxt").value;
+
+                   switch (checkTxt){
+                        case "php":
+                            txt = "I love php...";
+                            break;
+                        case "java":
+                            txt = "Java is nice language..";
+                            break;
+                        case "c#":
+                            txt="C# is most popular desktop based language..";
+                            break;
+                        default:
+                            txt="Unknown ........";
+                        
+                   }
+                   document.getElementById("result").innerHTML = txt;
+               }
+            </script>
+            
+        </div>
+
+        <div class="footer">
+            <h2><script>document.write("Imtiaz Bin Gias");</script></h2>
+        </div>
+    </section>
+    
+</body>
+</html>

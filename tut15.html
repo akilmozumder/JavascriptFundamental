@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Fundamental</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="content">
+        <header class="header">
+            <h2><script>document.write("Javascript Fundamental");</script></h2>
+        </header>
+
+        <section class="maincontent">
+            <div id="show">This Keyword</div>
+            <hr>
+            <script>
+                function liveProject(){
+                    var a = 200;
+                    this.x = 300;
+                    this.y = 400;
+                    this.z = function(){
+                        return this.x + this.y;
+                    }
+                }
+
+                var lp = new liveProject();
+
+                document.write(lp.a + "<br>"); //its show undefined
+                document.write("The result is : " + lp.z());
+
+            </script>
+        </section>
+
+        
+
+        <footer class="footer">
+            <h2><script>document.write("Imtiaz Bin Gias");</script></h2>
+        </footer>
+    </section>
+    
+</body>
+</html>
